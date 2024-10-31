@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Componentes de PC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>TECHPEC</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="procesadores.html">Procesadores</a></li>
+            <li><a href="tarjetas-graficas.html">Tarjetas_Graficas</a></li>
+            <li><a href="motherboards.html">Motherboards</a></li>
+        </ul>
+    </nav>
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="procesadores.html">Procesadores</a>
+            <a href="tarjetas-graficas.html">Tarjetas Gráficas</a>
+            <a href="motherboards.html">Motherboards</a>
+            <a href="carrito.html">Carrito</a>
+            <button id="toggleMode">Cambiar Modo</button>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <h1>Productos Disponibles</h1>
+
+        <!-- Lista de productos -->
+        <section class="product-list">
+            <div class="product-item">
+                <img src="ruta_a_imagen_procesador1.jpg" alt="Intel Core i9">
+                <h2>Intel Core i9-13900K</h2>
+                <p>24 núcleos, 32 hilos, hasta 5.8 GHz.</p>
+                <p class="product-price">$589</p>
+                <button class="button" onclick="addToCart('Intel Core i9-13900K')">Añadir al Carrito</button>
+                <button class="button">Comprar</button>
+            </div>
+
+            <!-- Repetir para cada producto -->
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Tienda de Componentes de PC. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

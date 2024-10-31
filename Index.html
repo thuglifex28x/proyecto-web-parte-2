@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Componentes de PC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>TECHPEC</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="procesadores.html">Procesadores</a></li>
+            <li><pstyle="margin-bottom: 20px;"><a href="tarjetas-graficas.html">Tarjetas Graficas</a></p></li>
+            <li><a href="motherboards.html">Motherboards</a></li>
+        </ul>
+    </nav>
+
+    <!-- Encabezado -->
+    <header>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="carrito.html">Carrito</a>
+            
+        </nav>
+        <h2>Bienvenido a la Tienda de Componentes de PC</h2>
+        <p>Tu destino para los mejores componentes de PC del mercado.</p>
+    </header>
+
+    <!-- Contenedor para la barra de accesos -->
+    <div id="quick-access" class="quick-access">
+        <h3>Productos</h3>
+        <div class="module-item">
+            <hr/>
+            <a href="procesadores.html">
+                <h4>Procesadores</h4>
+                <img src="Imagenes/procesadores.jpg.webp" alt="Módulo de Procesadores" >
+                <hr/>
+            </a> 
+        </div>
+        <div class="module-item">
+            <hr/>
+            <h4>Tarjetas Gráficas</h4>
+            <a href="tarjetas-graficas.html">
+                <img src="Imagenes/tarjetas-graficas.jpg.webp" alt="Módulo de Tarjetas Gráficas">
+                <hr/>
+            </a>
+        </div>
+        <div class="module-item">
+            <hr/>
+            <h4>Motherboards</h4>
+            <a href="motherboards.html">
+                <img src="Imagenes/motherboard.jpeg" alt="Módulo de Motherboards">
+            </a>
+            <hr/>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <h2>Productos Destacados</h2>
+        <br><br>
+
+        <!-- Contenedor para productos destacados -->
+        <section class="featured-products">
+            <!-- Productos de Procesadores -->
+            <h3>Procesadores</h3>
+            <div class="products-row">
+                <div class="product-item">
+                    <img src="Imagenes/I9-13900k.png" alt="Intel Core i9">
+                    <h4>Intel Core i9-13900K</h4>
+                    <p>24 núcleos, 32 hilos, hasta 5.8 GHz.</p>
+                    <p class="product-price">$589</p>
+                    <button class="button" onclick="addToCart('Intel Core i9-13900K')">Añadir al Carrito</button>
+                    <button class="button">Comprar</button>
+                </div>
+                <div class="product-item">
+                    <img src="Imagenes/2505503-ryzen-9-7900x.avif" alt="AMD Ryzen 9">
+                    <h4>AMD Ryzen 9 7950X</h4>
+                    <p>16 núcleos, 32 hilos, hasta 5.7 GHz.</p>
+                    <p class="product-price">$699</p>
+                    <button class="button" onclick="addToCart('AMD Ryzen 9 7950X')">Añadir al Carrito</button>
+                    <button class="button">Comprar</button>
+                </div>
+                <div class="product-item">
+                    <img src="Imagenes/I5-12600K.png" alt="Intel Core i5">
+                    <h4>Intel Core i5-12600K</h4>
+                    <p>10 núcleos, 16 hilos, hasta 4.9 GHz.</p>
+                    <p class="product-price">$289</p>
+                    <button class="button" onclick="addToCart('Intel Core i5-12600K')">Añadir al Carrito</button>
+                    <button class="button">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Productos de Tarjetas Graficas -->
+
+            <h3>Tarjetas Graficas</h3>
+            <div class="products-row">
+                <div class="product-item">
+                    <img src="Imagenes/Geforce RTX 4080 SUPER.webp" alt="Intel Core i9">
+                    <h4>GeForce RTX 4080 SUPER</h4>
+                    <p>2205 MHz Base 2510 MHz Boost, 16 GB GDDR6X.</p>
+                    <p class="product-price">$1,149.99</p>
+                    <button class="button" onclick="addToCart('Intel Core i9-13900K')">Añadir al Carrito</button>
+                    <button class="button">Comprar</button>
+                </div>
+                <div class="product-item">
+                    <img src="Imagenes/RX 7900 XTX 24GB.jpg" alt="AMD Ryzen 9">
+                    <h4>AMD Ryzen 9 7950X</h4>
+                    <p>2300 MHz Base 2500 MHz Boost, 24 GB GDDR6.</p>
+                    <p class="product-price">$869.99</p>
+                    <button class="button" onclick="addToCart('AMD Ryzen 9 7950X')">Añadir al Carrito</button>
+                    <button class="button">Comprar</button>
+                </div>
+                <div class="product-item">
+                    <img src="Imagenes/GeForce RTX 4070 12GB.jpg" alt="Intel Core i5">
+                    <h4>GeForce RTX 4070</h4>
+                    <p>1920 MHz Base 2475 MHz Boost, 12 GB GDDR6.</p>
+                    <p class="product-price">$539.99</p>
+                    <button class="button" onclick="addToCart('Intel Core i5-12600K')">Añadir al Carrito</button>
+                    <button class="button">Comprar</button>
+                </div>
+            </div>
+
+            <!-- Productos de Motherboards -->
+
+            <h3>Motherboards</h3>
+            <div class="products-row">
+                <div class="product-item">
+                    <img src="Imagenes/GIGABYTE X670 AORUS Elite AX.jpg" alt="Motherboard X670">
+                    <h4>GIGABYTE X670 AORUS Elite AX</h4>
+                    <p>(AM5/ LGA 1718/ ATX/ ).</p>
+                    <p class="product-price">$229.99</p>
+                    <button class="button" onclick="addToCart('Intel Core i9-13900K')">Añadir al Carrito</button>
+                    <button class="button">Comprar</button>
+                </div>
+                <div class="product-item">
+                    <img src="" alt="B570">
+                    <h4>AMD Ryzen 9 7950X</h4>
+                    <p>2300 MHz Base 2500 MHz Boost, 24 GB GDDR6.</p>
+                    <p class="product-price">$869.99</p>
+                    <button class="button" onclick="addToCart('AMD Ryzen 9 7950X')">Añadir al Carrito</button>
+                    <button class="button">Comprar</button>
+                </div>
+                <div class="product-item">
+                    <img src="" alt="Z490">
+                    <h4>GeForce RTX 4070</h4>
+                    <p>1920 MHz Base 2475 MHz Boost, 12 GB GDDR6.</p>
+                    <p class="product-price">$539.99</p>
+                    <button class="button" onclick="addToCart('Intel Core i5-12600K')">Añadir al Carrito</button>
+                    <button class="button">Comprar</button>
+                </div>
+            </div>
+
+        </section>
+        
+        <!-- Aquí puedes añadir más secciones de productos de otros módulos si lo deseas -->
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Tienda de Componentes de PC. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Script para alternar la visibilidad de la barra de accesos
+        document.getElementById('toggleAccess').onclick = function() {
+            var access = document.getElementById('quick-access');
+            access.classList.toggle('visible');
+        };
+    </script>
+</body>
+</html>
